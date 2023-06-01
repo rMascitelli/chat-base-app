@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+
+const backendURL = 'http:\/\/localhost:80'
 
 function App() {
   return (
@@ -10,8 +11,40 @@ function App() {
         <MascotLogo />
         <LoginBox />
       </div>
-      
+      <InteractiveButtons />
+      <div>
+          <pre id="payload"><span class="text-muted">Nothing sent yet...</span></pre>
+      </div>
       </header>
+    </div>
+  );
+}
+
+function MakePOSTRequest() {
+  // Simple POST request with a JSON body using fetch
+  let rcvd = document.getElementById("payload")
+  const requestOptions = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ title: 'React POST Request Example' }),
+  };
+  fetch(backendURL, requestOptions)
+    .then((response) => response.json())
+    .then((data) => {
+      rcvd.innerHTML = JSON.stringify(data, undefined, 4);
+    });
+}
+
+function clearReceived() {
+  let rcvd = document.getElementById("payload")
+  rcvd.innerHTML = "";
+}
+
+function InteractiveButtons() {
+  return (
+    <div>
+          <button onClick={MakePOSTRequest}>Push ME</button>
+          <button onClick={clearReceived}>Clear</button>
     </div>
   );
 }
