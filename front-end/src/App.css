@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  font-family: "Helvetica";
+  color: #bb5e5e;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.mascot-avatar {
+  width: 25*1.5;
+  height: 25;
+  border-radius: 50%;
+  padding: 10px;
+} 
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+/*
+.navbar a:hover {
+  color: #35d2f1;
+}
+*/ 
+
+.links a:hover {
+  color: rgb(66, 77, 237);
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+  align-items: normal;
+}
+
+.mascot-logo {
+  font-size: 5px;
+}
+
+.mascot-logo {
+  border-radius: 50%;
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+}
+
+.chatbase-logo {
+  max-width: 20%;
+  height: auto;
+}
+
+.create-account-button {
+  color: white;
+  background-color: #d03232;
+  border-radius: 8px;
+}
+
+.links .create-account-button:hover {
+  color: rgb(66, 77, 237);
+  background-color: #f05d5d;
+}
+
