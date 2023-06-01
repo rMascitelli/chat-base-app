@@ -18,7 +18,14 @@
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  color: white;
+}
+
+.App-header .http-request-test-box {
+  height: 200px;
+  margin-top: 30px;
+  border-top: 2px solid #f2f2f2;
+  background-color: #ffffff;
+  color: black;
 }
 
 .mascot-avatar {
@@ -63,6 +70,11 @@ li {
   padding: 5px;
   align-items: normal;
 }
+
+.login-box {
+  margin-top: 30px;
+}
+
 
 .mascot-logo {
   font-size: 5px;
