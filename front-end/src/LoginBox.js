@@ -8,8 +8,8 @@ function clearReceived() {
 function InteractiveButtons() {
 return (
     <div>
-        <button onClick={MakePOSTRequest}>Push ME</button>
-        <button onClick={clearReceived}>Clear</button>
+        <button onClick={MakePOSTRequest}>Send Credentials</button>
+        <button onClick={clearReceived}>Clear Response</button>
     </div>
     );
 }
@@ -37,7 +37,10 @@ function MakePOSTRequest() {
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ title: 'React POST Request Example' }),
+      body: JSON.stringify({ 
+        email: "test@gmail.com",
+        password: "foxlocks"
+      }),
     };
     fetch(backendURL, requestOptions)
       .then((response) => response.json())
