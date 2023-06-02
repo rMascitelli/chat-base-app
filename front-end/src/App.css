@@ -20,21 +20,6 @@
   align-items: center;
 }
 
-.App-header .http-request-test-box {
-  height: 200px;
-  margin-top: 30px;
-  border-top: 2px solid #f2f2f2;
-  background-color: #ffffff;
-  color: black;
-}
-
-.mascot-avatar {
-  width: 25*1.5;
-  height: 25;
-  border-radius: 50%;
-  padding: 10px;
-} 
-
 .navbar {
   padding: 20px;
   display: flex;
@@ -71,10 +56,13 @@ li {
   align-items: normal;
 }
 
-.login-box {
-  margin-top: 30px;
+.payload-analyzer {
+  height: 200px;
+  margin-top: 20px;
+  border-top: 2px solid #f2f2f2;
+  background-color: #ffffff;
+  color: black;
 }
-
 
 .mascot-logo {
   font-size: 5px;
