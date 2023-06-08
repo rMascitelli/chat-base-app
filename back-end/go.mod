@@ -1,4 +1,4 @@
-module github.com/rMascitelli/chat-base-app/back-end
+module github.com/rMascitelli/chat-base-app
 
 go 1.20
 
