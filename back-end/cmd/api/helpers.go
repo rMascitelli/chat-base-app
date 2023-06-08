@@ -13,11 +13,6 @@ type jsonResponse struct {
 	Data    any    `json:"data,omitempty"`
 }
 
-type AuthPayload struct {
-	Email    string `json:"email"`
-	Password string `json:"password"`
-}
-
 // readJSON tries to read the body of a request and converts it into JSON
 func (app *Config) readJSON(w http.ResponseWriter, r *http.Request, data any) error {
 	maxBytes := 1048576 // one megabyte

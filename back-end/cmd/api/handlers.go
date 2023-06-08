@@ -5,9 +5,14 @@ import (
 	"net/http"
 )
 
+type LoginPayload struct {
+	Email    string `json:"email"`
+	Password string `json:"password"`
+}
+
 func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
-	// Just expecting Auth requests for now
-	var auth AuthPayload
+	// Just expecting Login requests for now
+	var auth LoginPayload
 
 	app.readJSON(w, r, &auth)
 	payload := jsonResponse{
