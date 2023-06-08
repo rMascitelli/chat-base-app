@@ -1,4 +1,4 @@
-module github.com/rMascitelli/chatbase
+module github.com/rMascitelli/chat-base-app
 
 go 1.20
 

@@ -2,7 +2,7 @@ package main
 
 import (
 	_ "github.com/lib/pq"
-	"github.com/rMascitelli/chatbase/data"
+	"github.com/rMascitelli/chat-base-app/data"
 )
 
 const webPort = "80"
