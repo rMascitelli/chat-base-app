@@ -1,8 +1,10 @@
-package main
+package data
 
 import (
 	"database/sql"
 	"fmt"
+
+	"github.com/rMascitelli/chat-base-app/back-end/main"
 )
 
 // Can be used to unify interactions with SQL
@@ -22,7 +24,7 @@ type UserInfo struct {
 }
 
 func NewUserInfo() *UserInfo {
-	db, err := ConnectToDB()
+	db, err := main.ConnectToDB()
 	if err != nil {
 		fmt.Printf("Could not connect to DB, err: %v\n", err)
 		return nil
